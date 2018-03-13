@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link href="%PUBLIC_URL%/favicon.ico" mce_href="%PUBLIC_URL%/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="%PUBLIC_URL%/favicon.ico" mce_href="%PUBLIC_URL%/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="%PUBLIC_URL%/favicon.svg" mce_href="%PUBLIC_URL%/favicon.svg" rel="shortcut icon" type="image/x-icon" />
+    <title>白纸驿站</title>
+</head>
+
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="loading-container" id="loading-Div">
+        <div class="loading"></div>
+        <div class="loading-text" id="loading-text">Loading...</div>
+    </div>
+    <!-- <div class="spin-container" id="pageSpin">
+        <div class="spin1">
+            <div class="spin2"></div>
+            <div class="spin3"></div>
+        </div>
+    </div> -->
+    <div id="root"></div>
+<script type="text/javascript">
+    const initialize = function () {
+        let pageSpin = document.getElementById("loading-Div");
+        pageSpin.style.display = 'block';
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                pageSpin.style.display = 'none';
+            }
+        }
+    }
+    initialize();
+</script>
+</body>
+</html>
