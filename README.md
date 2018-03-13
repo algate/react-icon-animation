@@ -1,13 +1,22 @@
 基于create-react-App创建，可以自己安装create-react-app来创建项目。
+
     1.install create-react-app -g
+    
     2.create-react-app your-project
+    
     3.cd your-project
+    
     4.npm run eject
+    
     之后即是项目代码
     
+    
 也可以直接clone this porject。
+
 add content for myslf. 
+
 one: 增加favorite.ico svg支持
+
 two: index首页添加Loading样式（两种）
 
 
