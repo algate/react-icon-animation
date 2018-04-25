@@ -1,0 +1,62 @@
+.mask {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: alpha(opacity=60);
+  background-color: #777;
+  z-index: 1002;
+  left: 0px;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+}
+
+.close {
+  color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 20px;
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2);
+}
+
+.loginDiv {
+  background-image: url(../../assets/img/login_title.png);
+  background-repeat: no-repeat;
+  height: 360px;
+  width: 380px;
+  padding: 50px 30px;
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  /*设置为宽度的一半的负值*/
+  margin-left: -190px;
+  /*设置为高度的一半的负值*/
+  margin-top: -190px;
+  z-index: 1006;
+  box-sizing: border-box;
+}
+
+.regDiv {
+  height: 450px;
+  width: 380px;
+}
+
+.loginDiv .login-form-forgot {
+  float: right;
+}
+.loginDiv .login-form-button {
+  width: 100%;
+  box-sizing: border-box;
+}
+

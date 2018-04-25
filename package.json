@@ -27,6 +27,7 @@
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "node-sass": "^4.8.3",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
@@ -35,6 +36,9 @@
     "react": "^16.2.0",
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.4",
+    "sass-loader": "^7.0.1",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.6.2",
@@ -44,9 +48,9 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "start": "node scripts/start",
+    "build": "node scripts/build",
+    "test": "node scripts/test --env=jsdom"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -89,5 +93,14 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "antd": "^3.4.1",
+    "babel-plugin-import": "^1.7.0",
+    "history": "^4.7.2",
+    "react-app-rewired": "^1.5.0",
+    "react-redux": "^5.0.7",
+    "reducers": "^3.0.0-alpha",
+    "redux": "^3.7.2"
   }
 }

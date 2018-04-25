@@ -1,0 +1,25 @@
+/* input 搜索样式 */
+.c_input_search {
+    height: 45px;
+    display: inline-block;
+    .c_search_ann {
+        display: inline-block;
+        float: left;
+        width:220px;
+        height: 42px;
+        border:1px solid #e6e6e6;
+        outline: none;
+        padding-left: 10px;
+    }
+    .el-input__icon{
+        display: inline-block;
+        width:45px;
+        height: 44px;
+        text-align: center;
+        background-color:#2dabff;
+        line-height: 45px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
